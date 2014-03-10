@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		225CA48B18CD9138006084D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225CA48A18CD9138006084D8 /* Foundation.framework */; };
-		225CA49018CD9138006084D8 /* NNCommandClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 225CA48F18CD9138006084D8 /* NNCommandClient.h */; };
 		225CA49218CD9138006084D8 /* NNCommandClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA49118CD9138006084D8 /* NNCommandClient.m */; };
 		225CA49918CD9138006084D8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225CA49818CD9138006084D8 /* XCTest.framework */; };
 		225CA49A18CD9138006084D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225CA48A18CD9138006084D8 /* Foundation.framework */; };
@@ -16,6 +15,14 @@
 		225CA49F18CD9138006084D8 /* libNNCommandClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225CA48718CD9138006084D8 /* libNNCommandClient.a */; };
 		225CA4A518CD9138006084D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 225CA4A318CD9138006084D8 /* InfoPlist.strings */; };
 		225CA4A718CD9138006084D8 /* NNCommandClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA4A618CD9138006084D8 /* NNCommandClientTests.m */; };
+		225CA4BD18CD9210006084D8 /* libNNCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225CA4B818CD91FD006084D8 /* libNNCore.a */; };
+		225CA4E118CD9667006084D8 /* NNConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA4C918CD9667006084D8 /* NNConnectionManager.m */; };
+		225CA4E218CD9667006084D8 /* NNProtocolRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA4CB18CD9667006084D8 /* NNProtocolRequest.m */; };
+		225CA4E318CD9667006084D8 /* NNProtocolResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA4CD18CD9667006084D8 /* NNProtocolResponse.m */; };
+		225CA4E418CD9667006084D8 /* NNTCPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA4D018CD9667006084D8 /* NNTCPConnection.m */; };
+		225CA4E518CD9667006084D8 /* NNCommandRequestBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA4D318CD9667006084D8 /* NNCommandRequestBase.m */; };
+		225CA51A18CDA51A006084D8 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA51918CDA51A006084D8 /* GCDAsyncSocket.m */; };
+		225CA51E18CDA58E006084D8 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 225CA51D18CDA58E006084D8 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,27 @@
 			remoteGlobalIDString = 225CA48618CD9138006084D8;
 			remoteInfo = NNCommandClient;
 		};
+		225CA4B718CD91FD006084D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225CA4B218CD91FD006084D8 /* NNCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A5CE10F618CC42F6003F5725;
+			remoteInfo = NNCore;
+		};
+		225CA4B918CD91FD006084D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225CA4B218CD91FD006084D8 /* NNCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A5CE110618CC42F6003F5725;
+			remoteInfo = NNCoreTests;
+		};
+		225CA4BB18CD9207006084D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225CA4B218CD91FD006084D8 /* NNCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CE10F518CC42F6003F5725;
+			remoteInfo = NNCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,7 +63,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				225CA49018CD9138006084D8 /* NNCommandClient.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +72,6 @@
 		225CA48718CD9138006084D8 /* libNNCommandClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNNCommandClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		225CA48A18CD9138006084D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		225CA48E18CD9138006084D8 /* NNCommandClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NNCommandClient-Prefix.pch"; sourceTree = "<group>"; };
-		225CA48F18CD9138006084D8 /* NNCommandClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNCommandClient.h; sourceTree = "<group>"; };
 		225CA49118CD9138006084D8 /* NNCommandClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCommandClient.m; sourceTree = "<group>"; };
 		225CA49718CD9138006084D8 /* NNCommandClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNCommandClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		225CA49818CD9138006084D8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -53,6 +79,22 @@
 		225CA4A218CD9138006084D8 /* NNCommandClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NNCommandClientTests-Info.plist"; sourceTree = "<group>"; };
 		225CA4A418CD9138006084D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		225CA4A618CD9138006084D8 /* NNCommandClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCommandClientTests.m; sourceTree = "<group>"; };
+		225CA4B218CD91FD006084D8 /* NNCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NNCore.xcodeproj; path = ../NNCore/NNCore.xcodeproj; sourceTree = "<group>"; };
+		225CA4C818CD9667006084D8 /* NNConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNConnectionManager.h; sourceTree = "<group>"; };
+		225CA4C918CD9667006084D8 /* NNConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNConnectionManager.m; sourceTree = "<group>"; };
+		225CA4CA18CD9667006084D8 /* NNProtocolRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNProtocolRequest.h; sourceTree = "<group>"; };
+		225CA4CB18CD9667006084D8 /* NNProtocolRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNProtocolRequest.m; sourceTree = "<group>"; };
+		225CA4CC18CD9667006084D8 /* NNProtocolResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNProtocolResponse.h; sourceTree = "<group>"; };
+		225CA4CD18CD9667006084D8 /* NNProtocolResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNProtocolResponse.m; sourceTree = "<group>"; };
+		225CA4CF18CD9667006084D8 /* NNTCPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNTCPConnection.h; sourceTree = "<group>"; };
+		225CA4D018CD9667006084D8 /* NNTCPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNTCPConnection.m; sourceTree = "<group>"; };
+		225CA4D218CD9667006084D8 /* NNCommandRequestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNCommandRequestBase.h; sourceTree = "<group>"; };
+		225CA4D318CD9667006084D8 /* NNCommandRequestBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNCommandRequestBase.m; sourceTree = "<group>"; };
+		225CA4ED18CD96C1006084D8 /* NNCommandClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NNCommandClient.h; sourceTree = "<group>"; };
+		225CA51818CDA51A006084D8 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = CocoaAsyncSocket/GCD/GCDAsyncSocket.h; sourceTree = SOURCE_ROOT; };
+		225CA51918CDA51A006084D8 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = CocoaAsyncSocket/GCD/GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		225CA51C18CDA58E006084D8 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = JSONKit/JSONKit.h; sourceTree = SOURCE_ROOT; };
+		225CA51D18CDA58E006084D8 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = JSONKit/JSONKit.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +103,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				225CA48B18CD9138006084D8 /* Foundation.framework in Frameworks */,
+				225CA4BD18CD9210006084D8 /* libNNCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				225CA48C18CD9138006084D8 /* NNCommandClient */,
+				225CA51B18CDA572006084D8 /* ExtLibs */,
 				225CA4A018CD9138006084D8 /* NNCommandClientTests */,
+				225CA4B118CD91DD006084D8 /* Subprojects */,
 				225CA48918CD9138006084D8 /* Frameworks */,
 				225CA48818CD9138006084D8 /* Products */,
 			);
@@ -110,8 +155,11 @@
 		225CA48C18CD9138006084D8 /* NNCommandClient */ = {
 			isa = PBXGroup;
 			children = (
-				225CA48F18CD9138006084D8 /* NNCommandClient.h */,
+				225CA4ED18CD96C1006084D8 /* NNCommandClient.h */,
 				225CA49118CD9138006084D8 /* NNCommandClient.m */,
+				225CA4C718CD9667006084D8 /* ConnectionManager */,
+				225CA4CE18CD9667006084D8 /* RawSocket */,
+				225CA4D118CD9667006084D8 /* Request */,
 				225CA48D18CD9138006084D8 /* Supporting Files */,
 			);
 			path = NNCommandClient;
@@ -143,6 +191,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		225CA4B118CD91DD006084D8 /* Subprojects */ = {
+			isa = PBXGroup;
+			children = (
+				225CA4B218CD91FD006084D8 /* NNCore.xcodeproj */,
+			);
+			name = Subprojects;
+			sourceTree = "<group>";
+		};
+		225CA4B318CD91FD006084D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				225CA4B818CD91FD006084D8 /* libNNCore.a */,
+				225CA4BA18CD91FD006084D8 /* NNCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		225CA4C718CD9667006084D8 /* ConnectionManager */ = {
+			isa = PBXGroup;
+			children = (
+				225CA4C818CD9667006084D8 /* NNConnectionManager.h */,
+				225CA4C918CD9667006084D8 /* NNConnectionManager.m */,
+				225CA4CA18CD9667006084D8 /* NNProtocolRequest.h */,
+				225CA4CB18CD9667006084D8 /* NNProtocolRequest.m */,
+				225CA4CC18CD9667006084D8 /* NNProtocolResponse.h */,
+				225CA4CD18CD9667006084D8 /* NNProtocolResponse.m */,
+			);
+			path = ConnectionManager;
+			sourceTree = "<group>";
+		};
+		225CA4CE18CD9667006084D8 /* RawSocket */ = {
+			isa = PBXGroup;
+			children = (
+				225CA4CF18CD9667006084D8 /* NNTCPConnection.h */,
+				225CA4D018CD9667006084D8 /* NNTCPConnection.m */,
+			);
+			path = RawSocket;
+			sourceTree = "<group>";
+		};
+		225CA4D118CD9667006084D8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				225CA4D218CD9667006084D8 /* NNCommandRequestBase.h */,
+				225CA4D318CD9667006084D8 /* NNCommandRequestBase.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		225CA51B18CDA572006084D8 /* ExtLibs */ = {
+			isa = PBXGroup;
+			children = (
+				225CA51C18CDA58E006084D8 /* JSONKit.h */,
+				225CA51D18CDA58E006084D8 /* JSONKit.m */,
+				225CA51818CDA51A006084D8 /* GCDAsyncSocket.h */,
+				225CA51918CDA51A006084D8 /* GCDAsyncSocket.m */,
+			);
+			name = ExtLibs;
+			path = NNCommandClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +265,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				225CA4BC18CD9207006084D8 /* PBXTargetDependency */,
 			);
 			name = NNCommandClient;
 			productName = NNCommandClient;
@@ -200,6 +309,12 @@
 			mainGroup = 225CA47E18CD9138006084D8;
 			productRefGroup = 225CA48818CD9138006084D8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 225CA4B318CD91FD006084D8 /* Products */;
+					ProjectRef = 225CA4B218CD91FD006084D8 /* NNCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				225CA48618CD9138006084D8 /* NNCommandClient */,
@@ -207,6 +322,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		225CA4B818CD91FD006084D8 /* libNNCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libNNCore.a;
+			remoteRef = 225CA4B718CD91FD006084D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		225CA4BA18CD91FD006084D8 /* NNCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NNCoreTests.xctest;
+			remoteRef = 225CA4B918CD91FD006084D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		225CA49518CD9138006084D8 /* Resources */ = {
@@ -224,7 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225CA51A18CDA51A006084D8 /* GCDAsyncSocket.m in Sources */,
 				225CA49218CD9138006084D8 /* NNCommandClient.m in Sources */,
+				225CA4E218CD9667006084D8 /* NNProtocolRequest.m in Sources */,
+				225CA4E118CD9667006084D8 /* NNConnectionManager.m in Sources */,
+				225CA4E418CD9667006084D8 /* NNTCPConnection.m in Sources */,
+				225CA4E318CD9667006084D8 /* NNProtocolResponse.m in Sources */,
+				225CA4E518CD9667006084D8 /* NNCommandRequestBase.m in Sources */,
+				225CA51E18CDA58E006084D8 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = 225CA48618CD9138006084D8 /* NNCommandClient */;
 			targetProxy = 225CA49D18CD9138006084D8 /* PBXContainerItemProxy */;
+		};
+		225CA4BC18CD9207006084D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NNCore;
+			targetProxy = 225CA4BB18CD9207006084D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +478,12 @@
 				DSTROOT = /tmp/NNCommandClient.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NNCommandClient/NNCommandClient-Prefix.pch";
+				GCC_WARN_SIGN_COMPARE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../NNCore/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -346,6 +496,12 @@
 				DSTROOT = /tmp/NNCommandClient.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NNCommandClient/NNCommandClient-Prefix.pch";
+				GCC_WARN_SIGN_COMPARE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../NNCore/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

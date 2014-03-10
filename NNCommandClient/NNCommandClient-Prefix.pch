@@ -6,4 +6,6 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
+    #import "NNCore.h"
+    #import "NNCommandClient.h"
 #endif
