@@ -565,6 +565,7 @@
 				225CA4AC18CD9138006084D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		225CA4AD18CD9138006084D8 /* Build configuration list for PBXNativeTarget "NNCommandClientTests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +574,7 @@
 				225CA4AF18CD9138006084D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

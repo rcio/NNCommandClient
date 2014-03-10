@@ -2,8 +2,8 @@
 //  NNTCPConnection.m
 //  NNCommandClient
 //
-//  Created by fei on 9/10/13.
-//  Copyright (c) 2013 fei. All rights reserved.
+//  Created by Rico on 9/10/13.
+//  Copyright (c) 2013 Rico. All rights reserved.
 //
 
 #import "NNTCPConnection.h"
